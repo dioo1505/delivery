@@ -1,130 +1,219 @@
-/* inter */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
 *{
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    list-style: none;
-}
-
-.conteyner{
-    width: 100%;
-    max-width: 1440px;
-    padding: 0 50px;
-    margin: auto;
-}
-
-.signup{
-    width: 100%;
-    height: 48px;
-    background-color: #35B8BE;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.signup__paragf{
     font-family: "Inter", sans-serif;
+}
+.container{
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 20px;
+        box-sizing: border-box;
+        background-color: rgba(245, 251, 252, 1);
+
+}/* === MENU SECTION STYLES === */
+
+.menu__section {
+    width: 100%;
+    min-height: 1000px; /* height -> min-height */
+    /* border: 1px solid #000; */ /* Agar kerak bo'lsa, qoldirishingiz mumkin, lekin dizayn uchun olib tashlang */
+    text-align: center;
+    background-color: rgba(245, 251, 252, 1);
+    padding: 40px 20px; /* Yaxshiroq padding */
+  }
+  
+  .menu__section--title {
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 55px;
+    letter-spacing: 1.65px;
+    color: rgba(53, 184, 190, 1);
+    margin-bottom: 10px; /* Tegishli bo'sh joy */
+  }
+  
+  .menu__section--subtitle {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: 0.36px;
+    margin-bottom: 30px; /* Tegishli bo'sh joy */
+  }
+  
+  .menu__section--subtitle span {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: 0.36px;
+    color: rgba(53, 184, 190, 1);
+  }
+  
+  .menu__section--buttons {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 40px; /* Yuqoridagi matndan keyin bo'sh joy */
+  }
+  
+  .menu__section--buttons_1,
+  .menu__section--buttons_2,
+  .menu__section--buttons_3 {
+    width: auto; /* Avtomatik kenglik */
+    min-width: 130px; /* Minimal kenglik */
+    height: 52px;
+    font-weight: 400;
     font-size: 14px;
-    font-weight: 400;
-    color: #ffffff;
-}
-
-.signup__paragff{
-    font-weight: 600;
-}
-
-.header{
-    width: 100%;
+    line-height: 20px;
+    border-radius: 6px;
+    border: none;
+    padding: 0 20px; /* Ichki to'ldirish */
+    cursor: pointer;
+  }
+  
+  .menu__section--buttons_1 {
+    background-color: rgba(53, 184, 190, 1);
+    color: #fff;
+  }
+  
+  .menu__section--buttons_2,
+  .menu__section--buttons_3 {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid rgba(221, 221, 221, 1); /* Tushunarli chegaralar */
+  }
+  
+  .menu__section__card__section {
+    width: 100%; /* Responsive */
+    max-width: 1160px; /* Maksimal kenglik */
+    margin: 0 auto; /* Markazga tekislash */
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 10px; /* Ichki to'ldirish */
+  }
+  
+  .menu__section__card__section__card--container {
+    display: flex;
+    gap: 30px;
+    /* flex-wrap: wrap;  */
+    
+  }
+  
+  .menu__section__card__section__card--container--card1 {
+    height:180px; 
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(221, 221, 221, 1); /* Yengil chegaralar */
+    background-color: #fff;
+    display: flex;
+    gap: 20px; 
+    padding: 20px; 
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05); /* Yengil soyalar */
+    border-radius: 8px; /* Yumshoq burchaklar */
+  }
+  
+  .menu__section__card__section__card--container--card1__left {
+    width: 100px; /* Kichikroq rasm uchun */
     height: 100px;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.header__nav{
-    display: flex;
-    align-items: center;
-    gap: 40px;
-}
-
-.header__nav--link{
-    font-family: "Inter", sans-serif;
-    font-size: 15px;
-    font-weight: 400;
-}
-
-.header__nav--link:active{
-    color: #35B8BE;
-    font-weight: 600;
-}
-
-.kubik{
-    width: 55px;
-    height: 55px;
-    background-color: #35B8BE;
+    border-radius: 8px;
+    /* overflow: hidden; */
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 4px;
-}
-
-
-/* section */
-.section{
-    margin-top: 20px;
-    display: flex;
+  }
+  
+  .menu__section__card__section__card--container--card1__left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    justify-content: center;
     align-items: center;
+  }
+  
+  .menu__section__card__section__card--container--card1__right {
+    
     justify-content: space-between;
-    margin-bottom: 30px;
-}
-
-.section__text--text{
-    width: 560px;
-    font-family: "Inter", sans-serif;
-    font-size: 60px;
+    text-align: left;
+  }
+  
+  .menu__section__card__section__card--container--card1__right--word__section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .menu__section__card__section__card--container--card1__right--word__section--title {
     font-weight: 400;
-}
-
-.section__text--span{
-    color: #35B8BE;
-}
-
-.section__text--paragf{
-    width: 500px;
-    font-family: "Inter", sans-serif;
     font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0.6px;
+    color: rgba(8, 9, 10, 1);
+    margin: 0;
+  }
+  
+  .menu__section__card__section__card--container--card1__right--word__section--subtitle {
     font-weight: 400;
-    margin-top: 30px;
-    margin-bottom: 55px;
-    color: #546285;
-}
-
-.section__text--btn{
-    display: block;
-    padding: 20px 30px;
+    font-size: 15px;
+    line-height: 20px;
+    color: rgba(53, 184, 190, 1);
+    margin: 0;
+  }
+  
+  .menu__section__card__section__card--container--card1__right--lorem {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.32px;
+    color: rgba(84, 98, 133, 1);
+    margin: 0 0 15px 0;
+    flex-grow: 1;
+  }
+  
+  .menu__section__card__section__card--container--card1__right--btn1 {
+    width: 60px;
+    height: 45px;
+    border-radius: 6px;
+    background-color: rgba(250, 250, 250, 1);
+    text-align: center;
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: 0.36px;
+    border: 1px solid rgba(221, 221, 221, 1);
+    cursor: pointer;
+  }
+  
+  .menu__section__card__section__card--container--card1__right--btn2 {
+    background-color: rgba(53, 184, 190, 1);
+    width: 115px;
+    height: 45px;
+    border-radius: 6px;
+    border: none;
+    color: white;
+    font-weight: 400;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  /* === SEE FULL MENU BUTTON === */
+  
+  .menu__section__see-full-menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+  }
+  
+  .menu__section__see-full-menu--btn {
+    width: auto;
+    min-width: 180px;
+    height: 52px;
+    background-color: rgba(53, 184, 190, 1);
+    color: white;
     border: none;
     border-radius: 6px;
-    background-color: #35B8BE;
-    font-family: "Inter", sans-serif;
-    font-size: 17px;
     font-weight: 400;
-    color: white;
-    margin-bottom: 40px;
-}
-
-.section__text--par{
-    font-family: "Inter", sans-serif;
     font-size: 16px;
-    font-weight: 400;
-    color: #08090A;
-}
-
-.section__text--spanp{
-    color: #35B8BE;
-    margin-top: 15px;
-}
-
+    cursor: pointer;
+    padding: 0 30px;
+  }
