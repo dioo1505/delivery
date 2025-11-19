@@ -151,23 +151,150 @@
 }
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 *{
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
     text-decoration: none;
+    list-style: none;
     font-family: "Inter", sans-serif;
 }
+
+/* otabek */
+.conteyner{
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+.signup{
+  width: 100%;
+  height: 50px;
+  background-color: #35B8BE;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signup__paragrf{
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+}
+
+.signup__paragff{
+  font-weight: 600;
+}
+
+.header{
+  width: 100%;
+  height: 100px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__nav{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header__nav--link{
+  font-weight: 400;
+  font-size: 14px;
+  color: #28224B;
+}
+
+.header__nav--link:active{
+  color: #35B8BE;
+}
+
+
+.kubik{
+  width: 55px;
+  height: 55px;
+  background-color: #35B8BE;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.section{
+  width: 100%;
+  height: 720px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #F5FBFC;
+}
+
+.section__text--text{
+  width: 540px;
+  font-size: 60px;
+  font-weight: 400;
+}
+
+.section__text--span{
+  color: #35B8BE;
+}
+
+.section__text--paragf{
+  width: 539px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #546285;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.section__text--btn{
+  padding: 20px 35px;
+  border-radius: 6px;
+  background-color: #35B8BE;
+  color: #fff;
+  font-weight: 400;
+  font-size: 17px;
+  margin-bottom: 30px;
+  border: none;
+  display: block;
+}
+
+.section__text--par{
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.section__text--spanp{
+  color: #35B8BE
+}
+
+
+/* otabek tugadi */
+
+
 .container{
-        max-width: 1200px;
+        max-width: 1440px;
         width: 100%;
         margin: 0 auto;
         padding: 20px;
         box-sizing: border-box;
         background-color: rgba(245, 251, 252, 1);
 
-}/* === MENU SECTION STYLES === */
+}
+
+
+
+/* === MENU SECTION STYLES === */
 
 .menu__section {
     width: 100%;
     min-height: 1000px; /* height -> min-height */
+    margin-top: 20px;
     /* border: 1px solid #000; */ /* Agar kerak bo'lsa, qoldirishingiz mumkin, lekin dizayn uchun olib tashlang */
     text-align: center;
     background-color: rgba(245, 251, 252, 1);
