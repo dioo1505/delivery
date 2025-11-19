@@ -151,6 +151,7 @@
     font-family: "Inter", sans-serif;
 }
 
+
 /* otabek */
 .conteyner{
   width: 100%;
@@ -267,6 +268,45 @@
 
 
 /* otabek tugadi */
+/* Azizbek  */
+.conteiner3{
+width: 100%;
+height: 575px;
+padding: 0px 120px;
+}
+.conteiner3__title{
+	font-size: 50px;
+	font-weight: 400;
+	color:  rgba(53, 184, 190, 1);
+	margin-top: 14px;
+	text-align: center;
+}
+.cards{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 65px;
+	gap: 100px;
+}
+.cards__card{
+	width: 333px;
+	height: 440px;
+	text-align: center;
+}
+.cards__card--title{
+	font-weight: 400;
+	font-size: 20px;
+	margin-top: 48px;
+}
+.cards__card--paragraf{
+	font-weight: 400;
+	font-size: 18px;
+	margin-top: 15px;
+	margin-left: 37px;
+	margin-right: 36px;
+	color:rgba(84, 98, 133, 1);
+}
+/* Azizbek tugadi */
 
 
 .container{
