@@ -1,3 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+.Qutii{
+    margin: auto;
+    display: flex;
+    gap: 150px;
+    align-items: center;
+}
+.quticha{
+    padding: 0 90px;
+}
+
+.bosh__sahifa--bir{
+    font-size: 60px;
+    color: #35B8BE;
+    margin-bottom: 40px;
+}
+
+.orta__sahfia{
+    width: 578px;
+    font-size: 20px;
+    color: #546285;
+    margin-bottom: 45px;
+
+}
+.kinopka{
+    background-color: #35B8BE;
+    color: white;
+    border: none;
+    padding: 20px 30px;
+    border-radius: 6px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.asosiy__rasm{
+    position: relative;
+}
+
 * {
     margin: 0;
     padding: 0;
