@@ -6,10 +6,9 @@
     text-decoration: none;
 }
 .Qutii{
-    margin: auto;
     display: flex;
-    gap: 150px;
     align-items: center;
+    justify-content: center;
 }
 .quticha{
     padding: 0 90px;
@@ -22,7 +21,7 @@
 }
 
 .orta__sahfia{
-    width: 578px;
+    width: 500px;
     font-size: 20px;
     color: #546285;
     margin-bottom: 45px;
@@ -41,13 +40,6 @@
     position: relative;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    box-sizing: border-box;
-    text-decoration: none;
-}
 
 .contener {
     display: flex;
